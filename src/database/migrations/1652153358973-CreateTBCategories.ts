@@ -30,7 +30,7 @@ export class CreateTBCategories1652153358973 implements MigrationInterface {
                         default: "now()",
                     },
                 ],
-            })
+            }),
         );
     }
 
