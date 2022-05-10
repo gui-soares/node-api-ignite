@@ -1,9 +1,9 @@
 import { Repository } from "typeorm";
 
-import { AppDataSource } from "../../../../database";
-import { Category } from "../../entities/Category";
-import { ICreateCategoryDTO } from "../dtos";
-import { ICategoryRepository } from "../ICategoryRepository";
+import { AppDataSource } from "../../../../../shared/typeorm";
+import { ICreateCategoryDTO } from "../../../repositories/dtos";
+import { ICategoryRepository } from "../../../repositories/ICategoryRepository";
+import { Category } from "../entities/Category";
 
 class CategoryRepository implements ICategoryRepository {
     private repository: Repository<Category>;

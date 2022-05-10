@@ -3,11 +3,11 @@ import express from "express";
 import "express-async-errors";
 import "reflect-metadata";
 
-import { AppDataSource } from "./database";
+import { AppDataSource } from "../../typeorm";
 import { errors } from "./middlewares/errors";
 import { router } from "./routes";
 
-import "./shared/container";
+import "../../container";
 
 const app = express();
 

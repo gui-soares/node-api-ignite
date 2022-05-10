@@ -1,7 +1,7 @@
 import { inject, injectable } from "tsyringe";
 
-import { AppError } from "../../../../errors/AppError";
-import { Category } from "../../entities/Category";
+import { AppError } from "../../../../shared/infra/http/errors/AppError";
+import { Category } from "../../infra/typeorm/entities/Category";
 import { ICreateCategoryDTO } from "../../repositories/dtos";
 import { ICategoryRepository } from "../../repositories/ICategoryRepository";
 
