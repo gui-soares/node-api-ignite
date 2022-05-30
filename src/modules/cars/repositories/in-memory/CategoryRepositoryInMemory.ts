@@ -1,8 +1,8 @@
 import { v4 as uuidV4 } from "uuid";
 
-import { Category } from "../entities/Category";
-import { ICreateCategoryDTO } from "../repositories/dtos";
-import { ICategoryRepository } from "../repositories/ICategoryRepository";
+import { Category } from "../../infra/typeorm/entities/Category";
+import { ICreateCategoryDTO } from "../dtos";
+import { ICategoryRepository } from "../ICategoryRepository";
 
 class CategoryRepositoryInMemory implements ICategoryRepository {
     categories: Category[] = [];
