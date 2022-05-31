@@ -26,6 +26,10 @@ class CategoryRepositoryInMemory implements ICategoryRepository {
 
         return category;
     }
+
+    async list(): Promise<[Category[], number]> {
+        return [this.categories, this.categories.length];
+    }
 }
 
 export { CategoryRepositoryInMemory };

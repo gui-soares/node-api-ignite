@@ -21,6 +21,10 @@ class CategoryRepository implements ICategoryRepository {
     async findByName(name: string): Promise<Category> {
         return this.repository.findOne({ where: { name } });
     }
+
+    async list(): Promise<[Category[], number]> {
+        return this.repository.findAndCount();
+    }
 }
 
 export { CategoryRepository };
